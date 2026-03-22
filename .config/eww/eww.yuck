@@ -1,0 +1,15 @@
+(defpoll time :interval "1s" "date '+%H:%M:%S'")
+
+(defwindow clock
+  :monitor 1
+  :geometry (geometry :x "695px" 
+                      :y "-4px" 
+                      :width "400px" 
+                      :height "150px" 
+                      :anchor "bottom left")
+  :windowtype "desktop"
+  :stacking "bg"
+  :exclusive false
+  :focusable false
+  (box :class "clock-box"
+    (label :text time :class "clock-label")))

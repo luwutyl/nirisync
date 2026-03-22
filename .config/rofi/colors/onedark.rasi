@@ -1,0 +1,16 @@
+/**
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Github : @adi1090x
+ * 
+ * Colors
+ **/
+
+* {
+  background:     #161A1FFF;  /* тёмный холодный графит */
+  background-alt: #1E242BFF;  /* мягкий синевато-серый */
+  foreground:     #D8DEE9FF;  /* спокойный светло-серый */
+  selected:       #3C8D7CFF;  /* приглушённый зелёно-бирюзовый */
+  active:         #C9A84AFF;  /* нейтральный тёплый жёлтый (янтарный) */
+  urgent:         #C75B6BFF;  /* приглушённый розово-красный */
+}
