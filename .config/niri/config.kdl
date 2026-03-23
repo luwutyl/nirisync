@@ -477,6 +477,7 @@ layer-rule {
 window-rule {
   match app-id="Tk"
   open-floating true
+  default-floating-position x=100 y=200 relative-to="top-left"
 }
 
 workspace "" {
