@@ -309,13 +309,15 @@ layout {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 
 // waybar
+spawn-at-startup "~/.config/niri/scripts/niri-splash.sh"
 spawn-at-startup "waybar"
 spawn-sh-at-startup "eww deamon"
 spawn-sh-at-startup "eww open clock"
-spawn-at-startup "swww-daemon"
+spawn-sh-at-startup "eww open clock1"
+spawn-at-startup "sleep 1 && swww-daemon"
 spawn-at-startup "firefox"
-spawn-sh-at-startup "swaybg -i ~/.blurred_wallpaper.png -m fill"
 spawn-at-startup "hypridle"
+spawn-sh-at-startup "sleep 1 && swaybg -i ~/.blurred_wallpaper.png -m fill"
 spawn-at-startup "swaync"
 spawn-at-startup "yandexmusic"
 spawn-sh-at-startup "~/.local/bin/v2rayN"
@@ -331,7 +333,7 @@ spawn-sh-at-startup "wl-paste --type image --watch cliphist store"
 
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
-    // skip-at-startup
+    skip-at-startup
 }
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
@@ -469,6 +471,7 @@ layer-rule {
 layer-rule {
     match namespace="rofi"
     match namespace="waybar"
+    geometry-corner-radius 12
 
     background-effect {
         blur true
@@ -541,6 +544,23 @@ window-rule {
 }
 
 window-rule {
+    match app-id="splashR"
+
+    open-on-workspace "1"
+    focus-ring { off; }
+    shadow { off; }
+}
+
+window-rule {
+    match app-id="splashL"
+
+    open-on-workspace ""
+    
+    focus-ring { off; }
+    shadow { off; }
+}
+
+window-rule {
     match app-id="kitty"
     match app-id="spterme"
     match app-id="sptermw"
@@ -564,7 +584,7 @@ window-rule {
 window-rule {
   match app-id="v2rayN"
   open-maximized true
-  open-on-workspace "1"
+  open-on-workspace "2"
 }
 
 window-rule {
@@ -645,6 +665,7 @@ window-rule {
   open-floating true
   default-column-width { proportion 0.5; }
   default-window-height { proportion 0.5; }
+  default-floating-position x=468 y=50 relative-to="top-left"
 }
 
 window-rule {
@@ -652,6 +673,7 @@ window-rule {
   open-floating true
   default-column-width { proportion 0.5; }
   default-window-height { proportion 0.5; }
+  default-floating-position x=468 y=50 relative-to="top-left"
 }
 
 window-rule {

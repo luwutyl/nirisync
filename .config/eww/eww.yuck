@@ -13,3 +13,17 @@
   :focusable false
   (box :class "clock-box"
     (label :text time :class "clock-label")))
+
+(defwindow clock1
+  :monitor 0
+  :geometry (geometry :x "410px" 
+                      :y "-4px" 
+                      :width "400px" 
+                      :height "150px" 
+                      :anchor "bottom left")
+  :windowtype "desktop"
+  :stacking "bg"
+  :exclusive false
+  :focusable false
+  (box :class "clock-box"
+    (label :text time :class "clock-label")))
