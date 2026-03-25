@@ -104,6 +104,7 @@ tooltip {
 
 #language {
   padding: 3px 0;
+  margin-bottom: 8;
   color: #b8bb26;
   text-shadow: 0 0 8px #b8bb26;
 }

@@ -1,0 +1,16 @@
+max-visible=10
+anchor=top-right
+font=FiraCode Nerd Font
+default-timeout=5000
+icons=1
+markup=1
+
+padding=5
+width=500
+background-color=#282828f0
+progress-color=#b8bb26
+text-color=#ebdbb2
+
+border-color=#fabd2f
+border-size=2
+border-radius=12

@@ -30,7 +30,6 @@
         "wireplumber",
         "tray",
         "niri/language",
-        "custom/notification",
     ],
 
     // ===================================================================
