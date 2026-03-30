@@ -10,6 +10,7 @@ window#waybar {
   color: #fabd2f;
 }
 
+#idle_inhibitor,
 #wireplumber,
 #custom-uptime,
 #cpu,
@@ -28,6 +29,10 @@ window#waybar {
   margin-top: 5px;
   margin-bottom: 2px;
   text-shadow: 0 0 4px #fabd2f;
+}
+
+#idle_inhibitor {
+  color: #ebdbb2
 }
 
 #clock {

@@ -20,6 +20,7 @@
         "memory",
         "cpu",
         "custom/uptime",
+        "idle_inhibitor",
     ],
     
     "modules-center": [ 
@@ -45,6 +46,13 @@
         "70": 70, "75": 75, "80": 80, "85": 85, "90": 90, "95": 95
     },
     "tooltip-format": "RAM: {used:0.1f}GiB / {total:0.1f}GiB ({percentage}%)"
+},
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+        "activated": " ",
+        "deactivated": " "
+    }
 },
 
 "wireplumber": {
