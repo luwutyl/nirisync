@@ -314,7 +314,7 @@ spawn-at-startup "waybar"
 spawn-sh-at-startup "eww deamon"
 spawn-sh-at-startup "eww open clock"
 spawn-sh-at-startup "eww open clock1"
-spawn-at-startup "sleep 1 && awww-daemon"
+spawn-sh-at-startup "sleep 1 && awww-daemon"
 spawn-at-startup "firefox"
 spawn-at-startup "hypridle"
 spawn-sh-at-startup "sleep 1 && swaybg -i ~/.blurred_wallpaper.png -m fill"
@@ -789,7 +789,6 @@ binds {
     Mod+alt+O { spawn-sh "~/.config/niri/scripts/metadata.sh"; }
     Mod+P { spawn-sh "swaync-client -t"; }
     Mod+G { toggle-window-floating; }
-    Mod+semicolon { spawn-sh "~/.config/niri/scripts/clock.sh"; }
 
     // Example media keys mapping using playerctl.
     // This will work with any MPRIS-enabled media player.
