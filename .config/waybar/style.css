@@ -1,4 +1,4 @@
-@import "color.css";
+@import "defcolor.css";
 
 * {
   font-family: "JetBrainsMono Nerd Font";
@@ -158,7 +158,7 @@ tooltip {
 
 #cpu {
   font-size: 10px;
-  color: @color10; 
+  color: @color12; 
   padding: 0 0;
 }
 
