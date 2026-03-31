@@ -121,7 +121,7 @@ alias upmirror='sudo reflector --country Russia --protocol https --sort rate --l
 #alias neo-matrix='neo-matrix --color cyan -f 60'
 alias blue='bluetoothctl'
 alias 'fucking-reboot'='reboot'
-alias 'fuckpc'='poweroff'
+alias 'fuckmum'='poweroff'
 alias 'allfuckpc'='systemctl poweroff -i'
 alias 'allrefuckpc'='systemctl reboot -i'
 

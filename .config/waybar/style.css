@@ -1,3 +1,5 @@
+@import "color.css";
+
 * {
   font-family: "JetBrainsMono Nerd Font";
   font-size: 14px;
@@ -7,7 +9,7 @@
 
 window#waybar {
   background: rgba(62, 58, 55, 0.8);
-  color: #fabd2f;
+  color: @color11;
 }
 
 #idle_inhibitor,
@@ -22,24 +24,24 @@ window#waybar {
 #clock,
 #workspaces {
   box-shadow: 0 0 4px rgba(28, 28, 28, 0.6);
-  background-color: #282828;
+  background-color: @color0;
   border-radius: 10px;
   margin-left: 5px;
   margin-right: 5px;
   margin-top: 5px;
   margin-bottom: 2px;
-  text-shadow: 0 0 4px #fabd2f;
+  text-shadow: 0 0 4px @color11;
 }
 
 #idle_inhibitor {
-  color: #ebdbb2
+  color: @color15;
 }
 
 #clock {
   padding: 4px 0;
-  color: #83a598;
+  color: @color12;
   border-radius: 20%;
-  text-shadow: 0 0 8px #83a598;
+  text-shadow: 0 0 8px @color12;
 }
 
 #custom-uptime {
@@ -55,33 +57,33 @@ window#waybar {
 }
 
 #workspaces button {
-  color: #ebdbb2;
-  text-shadow: 0 0 10 #ebdbb2;
+  color: @color15;
+  text-shadow: 0 0 10 @color15;
   padding: 2px 0px;
 }
 
 #workspaces button:hover {
-  color: #fabd2f;
-  background-color: #282828;
-  text-shadow: 0 0 4px #fabd2f;
+  color: @color11;
+  background-color: @color0;
+  text-shadow: 0 0 4px @color11;
 }
 
 #workspaces button.urgent {
-  color: #fe8819;
-  border-bottom: 2px solid #fe8819;
-  text-shadow: 0 0 8px #fe8819;
+  color: @color17;
+  border-bottom: 2px solid @color17;
+  text-shadow: 0 0 8px @color17;
 }
 
 #workspaces button.active {
-  color: #fabd2f;
-  text-shadow: 0 0 10px #fabd2f;
-  border-left: 2px solid #fabd2f;
+  color: @color11;
+  text-shadow: 0 0 10px @color11;
+  border-left: 2px solid @color11;
 }
 
 #custom-notification {
-  text-shadow: 0 0 10px #fabd2f;
+  text-shadow: 0 0 10px @color11;
   font-size: 17px;
-  background-color: #282828;
+  background-color: @color0;
   border-radius: 10px;
   margin-bottom: 5px;
   padding-right: 4px;
@@ -94,15 +96,15 @@ window#waybar {
 }
 
 #tray menu {
-  background-color: #282828;
-  border: 2px solid #fabd2f;
+  background-color: @color0;
+  border: 2px solid @color11;
   border-radius: 8px;
   padding: 2px 2px;
 }
 
 tooltip {
-  background-color: #282828;
-  border: 1px solid #fabd2f;
+  background-color: @color0;
+  border: 1px solid @color11;
   padding: 6px;
   border-radius: 9px;
 }
@@ -110,8 +112,8 @@ tooltip {
 #language {
   padding: 3px 0;
   margin-bottom: 8;
-  color: #b8bb26;
-  text-shadow: 0 0 8px #b8bb26;
+  color: @color10;
+  text-shadow: 0 0 8px @color10;
 }
 
 #memory {
@@ -119,76 +121,72 @@ tooltip {
     border: 1px solid #313244;
     border-radius: 15px;
     padding: 5px 0;
-    min-width: 25px; /* Увеличил, чтобы формат 0.0G не дергался */
-    color: #458588;
+    min-width: 25px; 
+    color: @color12;
 }
 
-#memory.5  { color: #83a598; border-color: #83a598; }
-#memory.10 { color: #8cb28a; border-color: #8cb28a; }
-#memory.15 { color: #8ec07c; border-color: #8ec07c; }
+#memory.5  { color: @color12; border-color: @color12; }
+#memory.10 { color: @color12; border-color: @color12; }
+#memory.15 { color: @color12; border-color: @color12; }
 
-#memory.20 { color: #a3bd51; border-color: #a3bd51; }
-#memory.25 { color: #b8bb26; border-color: #b8bb26; }
-#memory.30 { color: #d7bc2b; border-color: #d7bc2b; }
+#memory.20 { color: @color14; border-color: @color14; }
+#memory.25 { color: @color14; border-color: @color14; }
+#memory.30 { color: @color14; border-color: @color14; }
 
-#memory.35 { color: #fabd2f; border-color: #fabd2f; }
-#memory.40 { color: #f2af2c; border-color: #f2af2c; }
-#memory.45 { color: #ea9f2a; border-color: #ea9f2a; }
+#memory.35 { color: @color10; border-color: @color10; }
+#memory.40 { color: @color10; border-color: @color10; }
+#memory.45 { color: @color10; border-color: @color10; }
 
-#memory.50 { color: #e18f29; border-color: #e18f29; }
-#memory.55 { color: #d97f28; border-color: #d97f28; }
-#memory.60 { color: #fe8019; border-color: #fe8019; }
+#memory.50 { color: @color11; border-color: @color11; }
+#memory.55 { color: @color11; border-color: @color11; }
+#memory.60 { color: @color11; border-color: @color11; }
 
-#memory.65 { color: #fd7122; border-color: #fd7122; }
-#memory.70 { color: #fc622b; border-color: #fc622b; }
-#memory.75 { color: #fb4934; border-color: #fb4934; }
+#memory.65 { color: @color17; border-color: @color17; }
+#memory.70 { color: @color17; border-color: @color17; }
+#memory.75 { color: @color17; border-color: @color17; }
 
-#memory.80 { color: #eb3c2c; border-color: #eb3c2c; }
-#memory.85 { color: #db2f25; border-color: #db2f25; }
-#memory.90 { color: #cc241d; border-color: #cc241d; }
+#memory.80 { color: @color9; border-color: @color9; }
+#memory.85 { color: @color9; border-color: @color9; }
+#memory.90 { color: @color9; border-color: @color9; }
 
 #memory.95 { 
-    color: #fb4934; 
-    border-color: #cc241d; 
-    text-shadow: 0 0 5px #cc241d; 
+    color: @color9; 
+    border-color: @color9; 
+    text-shadow: 0 0 5px @color9; 
     box-shadow: inset 0 0 5px rgba(204, 36, 29, 0.4); 
 }
 
 #cpu {
   font-size: 10px;
-  color: #b8bb26; 
+  color: @color10; 
   padding: 0 0;
 }
 
-#cpu.s5   { color: #b8bb26; text-shadow: 0 0 6px #b8bb26; border-color: #b8bb26; }
-#cpu.s10  { color: #a9be42; text-shadow: 0 0 6px #a9be42; border-color: #a9be42; }
-#cpu.s15  { color: #9bc15f; text-shadow: 0 0 6px #9bc15f; border-color: #9bc15f; }
-#cpu.s20  { color: #8ec07c; text-shadow: 0 0 6px #8ec07c; border-color: #8ec07c; } 
-#cpu.s25  { color: #99c272; text-shadow: 0 0 6px #99c272; border-color: #99c272; }
-#cpu.s30  { color: #a5c368; text-shadow: 0 0 6px #a5c368; border-color: #a5c368; }
-#cpu.s35  { color: #b1c55f; text-shadow: 0 0 6px #b1c55f; border-color: #b1c55f; }
-
-#cpu.s40  { color: #fabd2f; text-shadow: 0 0 6px #fabd2f; border-color: #fabd2f; }
-#cpu.s45  { color: #f1b42d; text-shadow: 0 0 6px #f1b42d; border-color: #f1b42d; }
-#cpu.s50  { color: #e9ab2a; text-shadow: 0 0 6px #e9ab2a; border-color: #e9ab2a; }
-#cpu.s55  { color: #d79921; text-shadow: 0 0 6px #d79921; border-color: #d79921; } 
-
-#cpu.s60  { color: #fe8019; text-shadow: 0 0 6px #fe8019; border-color: #fe8019; }
-#cpu.s65  { color: #eb7115; text-shadow: 0 0 6px #eb7115; border-color: #eb7115; }
-#cpu.s70  { color: #d65d0e; text-shadow: 0 0 6px #d65d0e; border-color: #d65d0e; }
-#cpu.s75  { color: #e85321; text-shadow: 0 0 6px #e85321; border-color: #e85321; }
-
-#cpu.s80  { color: #fb4934; text-shadow: 0 0 6px #fb4934; border-color: #fb4934; } 
-#cpu.s85  { color: #eb3c2c; text-shadow: 0 0 6px #eb3c2c; border-color: #eb3c2c; }
-#cpu.s90  { color: #dc2e25; text-shadow: 0 0 6px #dc2e25; border-color: #dc2e25; }
-
-#cpu.s95  { color: #cc241d; text-shadow: 0 0 8px #cc241d; border-color: #cc241d; } 
-#cpu.s100 { color: #cc241d; text-shadow: 0 0 12px #fb4934; border-color: #cc241d; font-weight: bold; }
+#cpu.s5   { color: @color12; text-shadow: 0 0 6px @color12; border-color: @color12; }
+#cpu.s10  { color: @color12; text-shadow: 0 0 6px @color12; border-color: @color12; }
+#cpu.s15  { color: @color12; text-shadow: 0 0 6px @color12; border-color: @color12; }
+#cpu.s20  { color: @color14; text-shadow: 0 0 6px @color14; border-color: @color14; } 
+#cpu.s25  { color: @color14; text-shadow: 0 0 6px @color14; border-color: @color14; }
+#cpu.s30  { color: @color14; text-shadow: 0 0 6px @color14; border-color: @color14; }
+#cpu.s35  { color: @color10; text-shadow: 0 0 6px @color10; border-color: @color10; }
+#cpu.s40  { color: @color10; text-shadow: 0 0 6px @color10; border-color: @color10; }
+#cpu.s45  { color: @color10; text-shadow: 0 0 6px @color10; border-color: @color10; }
+#cpu.s50  { color: @color11; text-shadow: 0 0 6px @color11; border-color: @color11; }
+#cpu.s55  { color: @color11; text-shadow: 0 0 6px @color11; border-color: @color11; } 
+#cpu.s60  { color: @color11; text-shadow: 0 0 6px @color11; border-color: @color11; }
+#cpu.s65  { color: @color17; text-shadow: 0 0 6px @color17; border-color: @color17; }
+#cpu.s70  { color: @color17; text-shadow: 0 0 6px @color17; border-color: @color17; }
+#cpu.s75  { color: @color17; text-shadow: 0 0 6px @color17; border-color: @color17; }
+#cpu.s80  { color: @color9; text-shadow: 0 0 6px @color9; border-color: @color9; } 
+#cpu.s85  { color: @color9; text-shadow: 0 0 6px @color9; border-color: @color9; }
+#cpu.s90  { color: @color9; text-shadow: 0 0 6px @color9; border-color: @color9; }
+#cpu.s95  { color: @color9; text-shadow: 0 0 8px @color9; border-color: @color9; } 
+#cpu.s100 { color: @color9; text-shadow: 0 0 8px @color9; border-color: @color9; font-weight: bold; }
 
 #custom-cava {
   font-size: 7;
   padding: 5px 0;
-  background-color: #282828;
+  background-color: @color0;
   border-radius: 10px;
   margin-bottom: 0;
   margin-left: 5px;
@@ -200,38 +198,34 @@ tooltip {
   padding: 5px 2px;
   border: 1px solid;
   transition: all 0.3s ease; 
-  color: #83a598;
+  color: @color12;
 }
 
-#wireplumber.s5   { color: #83a598; text-shadow: 0 0 6px #83a598; border-color: #83a598; }
-#wireplumber.s10  { color: #86b28a; text-shadow: 0 0 6px #86b28a; border-color: #86b28a; }
-#wireplumber.s15  { color: #8ec07c; text-shadow: 0 0 6px #8ec07c; border-color: #8ec07c; }
-#wireplumber.s20  { color: #9bbe51; text-shadow: 0 0 6px #9bbe51; border-color: #9bbe51; }
-
-#wireplumber.s25  { color: #b8bb26; text-shadow: 0 0 6px #b8bb26; border-color: #b8bb26; }
-#wireplumber.s30  { color: #cfbc2a; text-shadow: 0 0 6px #cfbc2a; border-color: #cfbc2a; }
-#wireplumber.s35  { color: #e6bd2d; text-shadow: 0 0 6px #e6bd2d; border-color: #e6bd2d; }
-#wireplumber.s40  { color: #fabd2f; text-shadow: 0 0 6px #fabd2f; border-color: #fabd2f; }
-#wireplumber.s45  { color: #f0ad2c; text-shadow: 0 0 6px #f0ad2c; border-color: #f0ad2c; }
-
-#wireplumber.s50  { color: #e69d29; text-shadow: 0 0 6px #e69d29; border-color: #e69d29; }
-#wireplumber.s55  { color: #d79921; text-shadow: 0 0 6px #d79921; border-color: #d79921; }
-#wireplumber.s60  { color: #ea8c1d; text-shadow: 0 0 6px #ea8c1d; border-color: #ea8c1d; }
-#wireplumber.s65  { color: #fe8019; text-shadow: 0 0 6px #fe8019; border-color: #fe8019; }
-#wireplumber.s70  { color: #ea6e14; text-shadow: 0 0 6px #ea6e14; border-color: #ea6e14; }
-
-#wireplumber.s75  { color: #d65d0e; text-shadow: 0 0 6px #d65d0e; border-color: #d65d0e; }
-#wireplumber.s80  { color: #e85321; text-shadow: 0 0 6px #e85321; border-color: #e85321; }
-#wireplumber.s85  { color: #f24e2a; text-shadow: 0 0 6px #f24e2a; border-color: #f24e2a; }
-#wireplumber.s90  { color: #fb4934; text-shadow: 0 0 8px #fb4934; border-color: #fb4934; }
-
-#wireplumber.s95  { color: #e33628; text-shadow: 0 0 8px #e33628; border-color: #e33628; }
-#wireplumber.s100 { color: #cc241d; text-shadow: 0 0 12px #fb4934; font-weight: bold; border-color: #cc241d; font-size: 12px; }
+#wireplumber.s5   { color: @color12; text-shadow: 0 0 6px @color12; border-color: @color12; }
+#wireplumber.s10  { color: @color12; text-shadow: 0 0 6px @color12; border-color: @color12; }
+#wireplumber.s15  { color: @color12; text-shadow: 0 0 6px @color12; border-color: @color12; }
+#wireplumber.s20  { color: @color14; text-shadow: 0 0 6px @color14; border-color: @color14; }
+#wireplumber.s25  { color: @color14; text-shadow: 0 0 6px @color14; border-color: @color14; }
+#wireplumber.s30  { color: @color14; text-shadow: 0 0 6px @color14; border-color: @color14; }
+#wireplumber.s35  { color: @color10; text-shadow: 0 0 6px @color10; border-color: @color10; }
+#wireplumber.s40  { color: @color10; text-shadow: 0 0 6px @color10; border-color: @color10; }
+#wireplumber.s45  { color: @color10; text-shadow: 0 0 6px @color10; border-color: @color10; }
+#wireplumber.s50  { color: @color11; text-shadow: 0 0 6px @color11; border-color: @color11; }
+#wireplumber.s55  { color: @color11; text-shadow: 0 0 6px @color11; border-color: @color11; }
+#wireplumber.s60  { color: @color11; text-shadow: 0 0 6px @color11; border-color: @color11; }
+#wireplumber.s65  { color: @color17; text-shadow: 0 0 6px @color17; border-color: @color17; }
+#wireplumber.s70  { color: @color17; text-shadow: 0 0 6px @color17; border-color: @color17; }
+#wireplumber.s75  { color: @color17; text-shadow: 0 0 6px @color17; border-color: @color17; }
+#wireplumber.s80  { color: @color9; text-shadow: 0 0 6px @color9; border-color: @color9; }
+#wireplumber.s85  { color: @color9; text-shadow: 0 0 6px @color9; border-color: @color9; }
+#wireplumber.s90  { color: @color9; text-shadow: 0 0 8px @color9; border-color: @color9; }
+#wireplumber.s95  { color: @color9; text-shadow: 0 0 8px @color9; border-color: @color9; }
+#wireplumber.s100 { color: @color9; text-shadow: 0 0 8px @color9; font-weight: bold; border-color: @color9; font-size: 12px; }
 
 /* Состояние Muted */
 #wireplumber.muted {
-    color: #928374;
-    background: #282828;
+    color: @color7;
+    background: @color0;
     text-shadow: none;
-    border-color: #928374;
+    border-color: @color7;
 }
