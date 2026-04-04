@@ -318,8 +318,8 @@ spawn-sh-at-startup "sleep 1 && awww-daemon"
 spawn-at-startup "firefox"
 spawn-at-startup "hypridle"
 spawn-sh-at-startup "sleep 1 && swaybg -i ~/.blurred_wallpaper.png -m fill"
-// spawn-at-startup "swaync"
-spawn-at-startup "mako"
+spawn-at-startup "swaync"
+//spawn-at-startup "mako"
 spawn-at-startup "yandexmusic"
 spawn-sh-at-startup "~/.local/bin/v2rayN"
 
@@ -469,7 +469,6 @@ layer-rule {
     match namespace="wallpaper"
     place-within-backdrop true
 }
-
 
 layer-rule {
     match namespace="rofi"
@@ -724,6 +723,10 @@ window-rule {
     }
 }
 
+window-rule {
+  match app-id="geeqie"
+  opacity 1.0
+}
 binds {
     // Keys consist of modifiers separated by + signs, followed by an XKB key name
     // in the end. To find an XKB name for a particular key, you may use a program

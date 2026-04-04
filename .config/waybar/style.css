@@ -35,6 +35,7 @@ window#waybar {
 
 #idle_inhibitor {
   color: @color15;
+  margin-top: 8;
 }
 
 #clock {
@@ -85,7 +86,7 @@ window#waybar {
   font-size: 17px;
   background-color: @color0;
   border-radius: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   padding-right: 4px;
   padding-bottom: 6px;
   padding-top: 6px;
@@ -111,7 +112,7 @@ tooltip {
 
 #language {
   padding: 3px 0;
-  margin-bottom: 8;
+  margin-top: 10;
   color: @color10;
   text-shadow: 0 0 8px @color10;
 }
@@ -123,6 +124,8 @@ tooltip {
     padding: 5px 0;
     min-width: 25px; 
     color: @color12;
+    margin-bottom: 4;
+    margin-top: 8;
 }
 
 #memory.5  { color: @color12; border-color: @color12; }
@@ -198,6 +201,7 @@ tooltip {
   padding: 5px 2px;
   border: 1px solid;
   transition: all 0.3s ease; 
+  margin-bottom: 6px;
   color: @color12;
 }
 
